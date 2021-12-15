@@ -89,6 +89,7 @@ body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+
 hr {
   margin: 1rem 0;
   color: inherit;
@@ -236,11 +237,15 @@ sup {
 }
 
 a {
-  color: #f4623a;
-  text-decoration: underline;
+  color: white;
+  text-decoration: none;
 }
 a:hover {
-  color: #c34e2e;
+  color: #ffc107;
+}
+
+.inicio{
+  font-size: 22px;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -317,6 +322,10 @@ caption {
 th {
   text-align: inherit;
   text-align: -webkit-match-parent;
+}
+
+.bg-clear{
+  color: #ffc107;
 }
 
 thead,
@@ -491,6 +500,20 @@ progress {
 .lead {
   font-size: 1.25rem;
   font-weight: 300;
+}
+
+.bg-blank{
+  color: white;
+}
+
+.header-title{
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  text-decoration: none;
+  white-space: nowrap;
+  font-weight: 700;
 }
 
 .display-1 {
@@ -967,6 +990,15 @@ progress {
     width: 50%;
   }
 
+  .video-frame-sm{
+    width: 100%;
+    height: 362px;
+  }
+
+  .btn-margin-sm{
+    display: none;
+  }
+
   .col-sm-7 {
     flex: 0 0 auto;
     width: 58.33333333%;
@@ -1108,6 +1140,11 @@ progress {
 @media (min-width: 768px) {
   .col-md {
     flex: 1 0 0%;
+  }
+
+  .video-frame-md{
+    width: 100%;
+    height: 35px;
   }
 
   .row-cols-md-auto > * {
@@ -1381,6 +1418,36 @@ progress {
   .col-lg-4 {
     flex: 0 0 auto;
     width: 33.33333333%;
+  }
+
+  .video-frame-lg{
+    width: 550px;
+    height: 362px;
+  }
+
+  .bi-caret-right-fill, .bi-caret-left-fill{
+    padding-top: 100px;
+    margin-top: 50vh;
+    font-size: 58px;
+    color: #A66F00;
+  }
+  
+  .btn-margin-lg{
+    margin-top: 400px;
+  } 
+  
+  .bi-caret-left-fill{
+    margin-left: 50px;
+  }
+  
+  .bi-caret-right-fill{
+   margin-right: 50px;
+  }
+  
+  .disabled{
+    pointer-events: none;
+    opacity: 0.2;
+    cursor: pointer;
   }
 
   .col-lg-5 {
@@ -3983,7 +4050,7 @@ textarea.form-control-lg {
 }
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
-  color: #495057;
+  color: #fff;
   background-color: #fff;
   border-color: #dee2e6 #dee2e6 #fff;
 }
@@ -4058,6 +4125,18 @@ textarea.form-control-lg {
   text-decoration: none;
   white-space: nowrap;
 }
+
+.btn-red-more{
+  height: 48px;
+  width: 200px;
+  border: none;
+  border-radius: 15px;
+  background-color: #F4623A;
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+}
+
 .navbar-nav {
   display: flex;
   flex-direction: column;
@@ -4092,6 +4171,7 @@ textarea.form-control-lg {
   border: 1px solid transparent;
   border-radius: 0.25rem;
   transition: box-shadow 0.15s ease-in-out;
+  background-color: #dc3545;
 }
 @media (prefers-reduced-motion: reduce) {
   .navbar-toggler {
