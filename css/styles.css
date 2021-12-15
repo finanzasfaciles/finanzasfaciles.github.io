@@ -668,6 +668,7 @@ progress {
   .container-sm, .container {
     max-width: 540px;
   }
+
 }
 @media (min-width: 768px) {
   .container-md, .container-sm, .container {
@@ -992,7 +993,7 @@ progress {
 
   .video-frame-sm{
     width: 100%;
-    height: 362px;
+    height: 500px;
   }
 
   .btn-margin-sm{
@@ -1140,11 +1141,6 @@ progress {
 @media (min-width: 768px) {
   .col-md {
     flex: 1 0 0%;
-  }
-
-  .video-frame-md{
-    width: 100%;
-    height: 35px;
   }
 
   .row-cols-md-auto > * {
@@ -5734,6 +5730,10 @@ textarea.form-control-lg {
     max-width: none;
     height: 100%;
     margin: 0;
+  }
+  .video-frame-mini{
+    width: 100%;
+    height: 220px;
   }
   .modal-fullscreen-sm-down .modal-content {
     height: 100%;
